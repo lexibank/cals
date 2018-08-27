@@ -5,12 +5,14 @@ Note: We run libreoffice to convert from doc to docx after download.
 from __future__ import unicode_literals, print_function
 from subprocess import check_call
 import re
+import unicodedata
 from collections import defaultdict
 
 from docx import Document
 from clldutils.dsv import UnicodeWriter, reader
 from clldutils.misc import slug, lazyproperty
 from clldutils.path import Path
+from segments import Tokenizer, Profile
 
 from clldutils.path import Path
 from pylexibank.dataset import Metadata
@@ -20,6 +22,7 @@ from lingpy.sequence.sound_classes import clean_string
 
 class Dataset(BaseDataset):
     dir = Path(__file__).parent
+    id = 'cals'
 
     def cmd_download(self, **kw):
         def rp(*names):
@@ -45,32 +48,35 @@ class Dataset(BaseDataset):
 
     @lazyproperty
     def tokenizer(self):
-        from segments import Tokenizer
-        t = Tokenizer(profile=str(self.dir / 'etc' / 'orthography.tsv'))
-        return lambda x, y: t(y).split()
+        profile = self.dir / 'etc' / 'orthography.tsv'
+        tokenizer = Tokenizer(profile=Profile.from_file(str(profile), form='NFC'))
+        def _tokenizer(item, string, **kw):
+            kw.setdefault("column", "Grapheme")
+            kw.setdefault("separator", " _ ")
+            return tokenizer(unicodedata.normalize('NFC', string), **kw).split()
+        return _tokenizer
 
     def cmd_install(self, **kw):
-        gcode = {x['ID']: x['GLOTTOCODE'] for x in self.languages}
-        ccode = {x.english: x.concepticon_id for x in self.conceptlist.concepts.values()}
+        gcode = {x['ID']: x['Glottocode'] for x in self.languages}
         data = defaultdict(dict)
         for fname in self.raw.glob('*.csv'):
             read(fname, data)
 
         with self.cldf as ds:
-            for doculect, wl in data.items():
+            ccode = ds.add_concepts(id_factory=lambda c: slug(c.label))
+            for doculect, wl in sorted(data.items()):
                 ds.add_language(
                     ID=slug(doculect), Name=doculect, Glottocode=gcode[doculect.split('-')[0]])
-
-                for concept, (form, loan, cogset) in wl.items():
-                    if concept in ccode:
-                        csid = ccode[concept]
-                    elif concept.startswith('to ') and concept[3:] in ccode:
-                        csid = ccode[concept[3:]]
+                for concept, (form, loan, cogset) in sorted(wl.items()):
+                    sc = slug(concept)
+                    if sc in ccode:
+                        pass
+                    elif sc.startswith('to ') and sc[3:] in ccode:
+                        sc = sc[3:]
                     else:
-                        csid = None
-                    ds.add_concept(ID=slug(concept), Name=concept, Concepticon_ID=csid)
+                        sc = None
                     for row in ds.add_lexemes(
-                            Language_ID=slug(doculect), Parameter_ID=slug(concept), Value=form):
+                            Language_ID=slug(doculect), Parameter_ID=sc, Value=form):
                         if cogset:
                             ds.add_cognate(
                                 lexeme=row,

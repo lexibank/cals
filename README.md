@@ -24,13 +24,14 @@ Conceptlist in Concepticon: [Mennecier-2016-183](http://concepticon.clld.org/con
 - **Concepts:** 183
 - **Lexemes:** 15,742
 - **Synonymy:** 1.00
-- **Cognacy:** 15,564 cognates in 715 cognate sets
+- **Cognacy:** 15,562 cognates in 716 cognate sets
 - **Invalid lexemes:** 0
-- **Tokens:** 68,905
+- **Tokens:** 68,988
 - **Segments:** 176 (20 BIPA errors, 20 CTLS sound class errors, 156 CLTS modified)
-- **Inventory size (avg):** 58.20
+- **Inventory size (avg):** 58.11
 
 ## Possible Improvements:
 
-- Entries missing sources: 15742/15742 (100.00%)
 
+
+- Entries missing sources: 15742/15742 (100.00%)

@@ -4,13 +4,11 @@
     "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#Wordlist",
     "dc:format": "http://concepticon.clld.org/contributions/Mennecier-2016-183",
     "dc:identifier": "https://figshare.com/articles/A_Central_Asian_Language_Survey/3443090/1",
-    "dc:license": [
-        "CC-BY-4.0",
-        "Creative Commons Attribution 4.0",
-        "https://creativecommons.org/licenses/by/4.0/"
-    ],
+    "dc:license": "https://creativecommons.org/licenses/by/4.0/",
     "dc:title": "A Central Asian Language Survey",
+    "dcat:accessURL": "https://github.com/lexibank/cals",
     "rdf:ID": "cals",
+    "rdf:type": "http://www.w3.org/ns/dcat#Distribution",
     "dialect": {
         "commentPrefix": null
     },
@@ -18,8 +16,8 @@
         {
             "dc:title": "environment",
             "properties": {
-                "concepticon_version": "pyconcepticon-1.3-45-g85ba61d",
-                "glottolog_version": "v3.2-55-gef2031a"
+                "glottolog_version": "v3.3.2",
+                "concepticon_version": "pyconcepticon-1.4.0-10-g1d57531"
             }
         }
     ],
@@ -203,7 +201,7 @@
             "tableSchema": {
                 "columns": [
                     {
-                        "datatype": "integer",
+                        "datatype": "string",
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id",
                         "name": "ID"
                     },

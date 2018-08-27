@@ -5,51 +5,50 @@
 
 | Segment | Occurrence | BIPA | CLTS SoundClass |
 |:----------|-------------:|:-------|:------------------|
-| a | 9495 | ✓ | ✓ |
-| r | 4239 | ✓ | ✓ |
-| t | 3804 | ✓ | ✓ |
-| n | 3627 | ✓ | ✓ |
-| ɔ | 3240 | ✓ | ✓ |
-| k | 2561 | ✓ | ✓ |
-| i | 2478 | ✓ | ✓ |
-| l | 2469 | ✓ | ✓ |
-| m | 2410 | ✓ | ✓ |
-| q | 2392 | ✓ | ✓ |
+| a | 9550 | ✓ | ✓ |
+| r | 4234 | ✓ | ✓ |
+| t | 3825 | ✓ | ✓ |
+| n | 3654 | ✓ | ✓ |
+| ɔ | 3258 | ✓ | ✓ |
+| k | 2593 | ✓ | ✓ |
+| i | 2473 | ✓ | ✓ |
+| l | 2433 | ✓ | ✓ |
+| m | 2415 | ✓ | ✓ |
+| q | 2394 | ✓ | ✓ |
 | u | 2206 | ✓ | ✓ |
-| s | 2190 | ✓ | ✓ |
-| d | 1963 | ✓ | ✓ |
-| j | 1748 | ✓ | ✓ |
-| ʃ | 1693 | ✓ | ✓ |
-| e | 1363 | ✓ | ✓ |
+| s | 2196 | ✓ | ✓ |
+| d | 1991 | ✓ | ✓ |
+| j | 1749 | ✓ | ✓ |
+| ʃ | 1723 | ✓ | ✓ |
+| e | 1304 | ✓ | ✓ |
 | b | 1247 | ✓ | ✓ |
-| ʊ | 1070 | ✓ | ✓ |
-| z | 991 | ✓ | ✓ |
+| ʊ | 1071 | ✓ | ✓ |
+| z | 998 | ✓ | ✓ |
 | ɨ | 949 | ✓ | ✓ |
-| ɪ | 936 | ✓ | ✓ |
-| ʉ | 932 | ✓ | ✓ |
+| ɪ | 934 | ✓ | ✓ |
+| ʉ | 928 | ✓ | ✓ |
 | p | 903 | ✓ | ✓ |
 | g | 876 | ✓ | ✓ |
-| x | 862 | ✓ | ✓ |
-| ʧ | 712 | ✓ | ✓ |
+| x | 866 | ✓ | ✓ |
+| ʧ | 713 | ✓ | ✓ |
 | w | 673 | ✓ | ✓ |
 | ø | 664 | ✓ | ✓ |
-| ə | 657 | ✓ | ✓ |
-| ʊː | 610 | ✓ | ✓ |
+| ə | 658 | ✓ | ✓ |
+| ʊː | 615 | ✓ | ✓ |
 | ʤ | 548 | ✓ | ✓ |
 | f | 531 | ✓ | ✓ |
-| y | 525 | ✓ | ✓ |
-| ʒ | 508 | ✓ | ✓ |
+| y | 515 | ✓ | ✓ |
+| ʒ | 510 | ✓ | ✓ |
 | h | 477 | ✓ | ✓ |
 | z̥ | 461 | ✓ | ✓ |
 | ɣ | 443 | ✓ | ✓ |
-| ŋ | 402 | ✓ | ✓ |
+| ŋ | 403 | ✓ | ✓ |
 | ɛ | 347 | ✓ | ✓ |
 | nd | 337 | ✓ | ✓ |
 | v | 324 | ✓ | ✓ |
-| o | 308 | ✓ | ✓ |
+| o | 309 | ✓ | ✓ |
 | kʲ | 228 | ✓ | ✓ |
-| ɒ | 215 | ✓ | ✓ |
-| tʲ | 157 | ✓ | ✓ |
+| ɒ | 216 | ✓ | ✓ |
 | � | 156 | ? | ? |
 | ɔː | 146 | ✓ | ✓ |
 | uː | 143 | ✓ | ✓ |
@@ -57,10 +56,11 @@
 | aʊ | 133 | ✓ | ✓ |
 | β | 132 | ✓ | ✓ |
 | bʲ | 131 | ✓ | ✓ |
-| yː | 124 | ✓ | ✓ |
+| tʲ | 121 | ✓ | ✓ |
 | ł | 120 | ? | ? |
+| yː | 116 | ✓ | ✓ |
+| mʲ | 82 | ✓ | ✓ |
 | b̥ | 81 | ✓ | ✓ |
-| mʲ | 81 | ✓ | ✓ |
 | iː | 76 | ✓ | ✓ |
 | d̥ | 72 | ✓ | ✓ |
 | nʲ | 69 | ✓ | ✓ |
@@ -73,7 +73,7 @@
 | r̩ | 52 | ✓ | ✓ |
 | sʲ | 50 | ✓ | ✓ |
 | m̩ | 47 | ✓ | ✓ |
-| ɐ | 46 | ✓ | ✓ |
+| ɐ | 45 | ✓ | ✓ |
 | ʒʲ | 45 | ✓ | ✓ |
 | S | 39 | ? | ? |
 | ng | 39 | ✓ | ✓ |
@@ -99,15 +99,15 @@
 | ɪʊ | 15 | ✓ | ✓ |
 | mv | 13 | ✓ | ✓ |
 | oː | 13 | ✓ | ✓ |
-| # | 11 | ✓ | ✓ |
+| _ | 11 | ✓ | ✓ |
 | pf | 11 | ✓ | ✓ |
 | U | 10 | ? | ? |
-| ai | 10 | ✓ | ✓ |
 | kt | 10 | ✓ | ✓ |
 | n̩ | 10 | ✓ | ✓ |
 | əʊ | 10 | ✓ | ✓ |
 | ʁ | 10 | ✓ | ✓ |
 | ʧʲ | 10 | ✓ | ✓ |
+| ai | 9 | ✓ | ✓ |
 | au | 9 | ✓ | ✓ |
 | dzʲ | 9 | ✓ | ✓ |
 | ŋb | 9 | ✓ | ✓ |
@@ -140,13 +140,13 @@
 | wh | 4 | ? | ? |
 | œ | 4 | ✓ | ✓ |
 | ɔʊ | 4 | ✓ | ✓ |
-| ã | 3 | ✓ | ✓ |
 | dz | 3 | ✓ | ✓ |
 | d̩ | 3 | ✓ | ✓ |
 | gw | 3 | ? | ? |
 | mb | 3 | ✓ | ✓ |
 | nw | 3 | ? | ? |
 | vʲ | 3 | ✓ | ✓ |
+| ã | 3 | ✓ | ✓ |
 | eˑ | 2 | ✓ | ✓ |
 | pk | 2 | ✓ | ✓ |
 | tw | 2 | ? | ? |
@@ -198,107 +198,107 @@
 ## Words with invalid segments (up to 100 only)
 
 | ID | LANGUAGE | CONCEPT | FORM | SEGMENTS |
-|-----:|:-------------|:----------|:---------|:------------------------------------------------|
-| 1027 | usoymahalla2 | mountain | tɔɣ˳ | t ɔ ɣ <s> � </s> |
-| 105 | unovmetan3 | two | ikkʲe | i kk <s> � </s> e |
-| 1086 | usoymahalla3 | good | jaxSə | j a x <s> S </s> ə |
-| 1175 | usoymahalla3 | two | ikkʲe | i kk <s> � </s> e |
-| 1208 | usoymahalla3 | mountain | tɔɣ˳ | t ɔ ɣ <s> � </s> |
-| 1214 | usoymahalla3 | animal | hajwɔn | h a <s> jw </s> ɔ n |
-| 1266 | usoymahalla1 | good | jaxS1 | j a x <s> S </s> 1 |
-| 1310 | usoymahalla1 | leaf | barg˳ | b a r g <s> � </s> |
-| 1357 | usoymahalla1 | two | ikkʲe | i kk <s> � </s> e |
-| 137 | unovmetan3 | mountain | tɔɣ˳ | t ɔ ɣ <s> � </s> |
-| 1376 | usoymahalla1 | seed | uruɣ˳ | u r u ɣ <s> � </s> |
-| 1419 | usoymahalla1 | green | zangʲɔrɪ | z a ng <s> � </s> ɔ r ɪ |
-| 1446 | kikulanak1 | good | dZaqS1 | d <s> Z </s> a q <s> S </s> 1 |
-| 1484 | kikulanak1 | year | ʤɪł | ʤ ɪ <s> ł </s> |
-| 1525 | kikulanak1 | one | bir̯ | b i r <s> � </s> |
-| 1526 | kikulanak1 | toeat | ʤʲɛ | ʤ <s> � </s> ɛ |
-| 1619 | tnushor1 | tokill | kS̩tan | k <s> S </s> <s> � </s> t a n |
-| 1626 | tnushor1 | good | naGz | n a <s> G </s> z |
-| 1644 | tnushor1 | sand | rʲeg˳ | rʲ e g <s> � </s> |
-| 1680 | tnushor1 | bird | mʊrɣ˳ | m ʊ r ɣ <s> � </s> |
-| 1749 | tnushor1 | mountain | kh̩ | kh <s> � </s> |
-| 178 | kiorday4 | snow | qɒr̯ | q ɒ r <s> � </s> |
-| 1784 | tnushor1 | wing | bɔł | b ɔ <s> ł </s> |
-| 1800 | tnushor2 | tokill | kS̩tan | k <s> S </s> <s> � </s> t a n |
-| 1807 | tnushor2 | good | naGz | n a <s> G </s> z |
-| 1875 | tnushor2 | husband | ʃawhar | ʃ a <s> wh </s> a r |
-| 19 | unovmetan3 | good | jaxSI | j a x <s> S </s> <s> I </s> |
-| 193 | kiorday4 | good | dZaxS1 | d <s> Z </s> a x <s> S </s> 1 |
-| 1975 | tnushor3 | tokill | kS̩tan | k <s> S </s> <s> � </s> t a n |
-| 1982 | tnushor3 | good | xUb | x <s> U </s> b |
-| 1988 | tnushor3 | five | panʒ˳ | p a nʒ <s> � </s> |
-| 2088 | tnushor3 | smooth | rʒ ̩d | r ʒ # <s> � </s> d |
-| 2104 | tnushor3 | mountain | pS̩ta | p <s> S </s> <s> � </s> t a |
-| 2132 | tnushor3 | dog | sag˳ | s a g <s> � </s> |
-| 2163 | tzarmanak1 | good | naGz | n a <s> G </s> z |
-| 2345 | tzarmanak2 | good | naGz | n a <s> G </s> z |
-| 2389 | tzarmanak2 | leaf | barg˳ | b a r g <s> � </s> |
-| 2468 | tzarmanak2 | mountain | tɔɣ˳ | t ɔ ɣ <s> � </s> |
-| 2526 | tagalyk | good | xub_0 | x u b <s> � </s> <s> 0 </s> |
-| 2628 | tagalyk | feather | par̯ | p a r <s> � </s> |
-| 2707 | kkhalqabad1 | good | Zaxs1 | <s> Z </s> a x s 1 |
-| 277 | kiorday4 | two | ɛkkʲɪ | ɛ kk <s> � </s> ɪ |
-| 2789 | kkhalqabad1 | toeat | ʒɪʊː | ʒ ɪʊ <s> � </s> |
-| 2836 | kkhalqabad1 | animal | hajwɒn | h a <s> jw </s> ɒ n |
-| 2889 | kkhalqabad2 | good | Zaxs1 | <s> Z </s> a x s 1 |
-| 2971 | kkhalqabad2 | toeat | ʒɪʊː | ʒ ɪʊ <s> � </s> |
-| 3019 | kkhalqabad2 | animal | hajwɒn | h a <s> jw </s> ɒ n |
-| 3072 | kkhalqabad3 | good | Zaxs1 | <s> Z </s> a x s 1 |
-| 3154 | kkhalqabad3 | toeat | ʒɪʊː | ʒ ɪʊ <s> � </s> |
-| 3165 | kkhalqabad3 | when | qajwaxta | q a <s> jw </s> a x t a |
-| 3202 | kkhalqabad3 | animal | hajwɒn | h a <s> jw </s> ɒ n |
-| 3255 | tnavdi3 | good | xUb_0 | x <s> U </s> b <s> � </s> <s> 0 </s> |
-| 3298 | tnavdi3 | leaf | barg˳ | b a r g <s> � </s> |
-| 3359 | tnavdi3 | smooth | rʒ ̩d | r ʒ # <s> � </s> d |
-| 3404 | tnavdi3 | dog | sag˳ | s a g <s> � </s> |
-| 3414 | tnavdi2 | forest | ʤangał | ʤ a ng a <s> ł </s> |
-| 3434 | tnavdi2 | good | xUb_0 | x <s> U </s> b <s> � </s> <s> 0 </s> |
-| 3476 | tnavdi2 | leaf | barg˳ | b a r g <s> � </s> |
-| 3503 | tnavdi2 | husband | ʃawhar | ʃ a <s> wh </s> a r |
-| 3539 | tnavdi2 | smooth | rʒ ̩d | r ʒ # <s> � </s> d |
-| 3615 | tnavdi1 | good | xub_0 | x u b <s> � </s> <s> 0 </s> |
-| 3621 | tnavdi1 | five | panʤ˳ | p a n ʤ <s> � </s> |
-| 3658 | tnavdi1 | leaf | barg˳ | b a r g <s> � </s> |
-| 366 | kiorday2 | good | dZaqSI | d <s> Z </s> a q <s> S </s> <s> I </s> |
-| 3689 | tnavdi1 | narrow | taŋ˳ | t a ŋ <s> � </s> |
-| 3721 | tnavdi1 | smooth | rʒ ̩d | r ʒ # <s> � </s> d |
-| 3766 | tnavdi1 | dog | sag˳ | s a g <s> � </s> |
-| 3797 | kitamga | good | dZaqS1 | d <s> Z </s> a q <s> S </s> 1 |
-| 3979 | ydugova1 | good | naGz | n a <s> G </s> z |
-| 4059 | ydugova1 | toeat | xwarak | <s> xw </s> a r a k |
-| 410 | kiorday2 | leaf | barg˳ | b a r g <s> � </s> |
-| 4157 | ydugova2 | good | xUSrU: | x <s> U </s> <s> S </s> r <s> U </s> <s> � </s> |
-| 4239 | ydugova2 | toeat | xwar | <s> xw </s> a r |
-| 4340 | kiakmuz1 | good | dZaqS1 | d <s> Z </s> a q <s> S </s> 1 |
-| 4422 | kiakmuz1 | toeat | ʤʲeː | ʤ <s> � </s> eː |
-| 4523 | kiakmuz3 | good | dZaqS1 | d <s> Z </s> a q <s> S </s> 1 |
-| 4565 | kiakmuz3 | flower | g˳yl | g <s> � </s> y l |
-| 4705 | kiakmuz2 | good | dZaqS1 | d <s> Z </s> a q <s> S </s> 1 |
-| 4888 | kikulanak2 | good | dZaqS1 | d <s> Z </s> a q <s> S </s> 1 |
-| 4927 | kikulanak2 | year | ʤɪł | ʤ ɪ <s> ł </s> |
-| 5071 | kikulanak3 | good | dZaqSI | d <s> Z </s> a q <s> S </s> <s> I </s> |
-| 5153 | kikulanak3 | toeat | ʤʲe | ʤ <s> � </s> e |
-| 5254 | uzarmanak4 | good | jaxSI | j a x <s> S </s> <s> I </s> |
-| 5345 | uzarmanak4 | two | ikkʲe | i kk <s> � </s> e |
-| 5365 | uzarmanak4 | seed | uruɣ˳ | u r u ɣ <s> � </s> |
-| 5378 | uzarmanak4 | mountain | tɔɣ˳ | t ɔ ɣ <s> � </s> |
-| 5436 | uzarmanak3 | good | jaxSI | j a x <s> S </s> <s> I </s> |
-| 547 | kiorday3 | good | dZaxSI | d <s> Z </s> a x <s> S </s> <s> I </s> |
-| 5554 | uzarmanak3 | woman | ajɔł | a j ɔ <s> ł </s> |
-| 5557 | uzarmanak3 | mountain | tɔɣ˳ | t ɔ ɣ <s> � </s> |
-| 5581 | uzarmanak3 | short | kałta | k a <s> ł </s> t a |
-| 5616 | kikulanak4 | good | dZaqS1 | d <s> Z </s> a q <s> S </s> 1 |
-| 5659 | kikulanak4 | flower | g˳yl | g <s> � </s> y l |
-| 5698 | kikulanak4 | toeat | ʤʲe | ʤ <s> � </s> e |
-| 62 | unovmetan3 | leaf | barg˳ | b a r g <s> � </s> |
-| 620 | kiorday3 | narrow | tar̯ | t a r <s> � </s> |
-| 722 | kiorday1 | good | dZaqS1 | d <s> Z </s> a q <s> S </s> 1 |
-| 781 | kiorday1 | toburn | ʤag˳ | ʤ a g <s> � </s> |
-| 904 | usoymahalla2 | good | jaxSə | j a x <s> S </s> ə |
-| 994 | usoymahalla2 | two | ikkʲe | i kk <s> � </s> e |
+|:---------------------|:------------|:----------|:---------|:----------------------------|
+| kagazli1-animal-1 | kagazli1 | animal | ʒanwar | ʒ a <s> nw </s> a r |
+| kagazli1-dirty-1 | kagazli1 | dirty | łas | <s> ł </s> a s |
+| kagazli1-dry-1 | kagazli1 | dry | qurhaq | q u <s> rh </s> a q |
+| kagazli1-good-1 | kagazli1 | good | Zaxsə | <s> Z </s> a x s ə |
+| kagazli1-green-1 | kagazli1 | green | ʒasɨł | ʒ a s ɨ <s> ł </s> |
+| kagazli1-hand-1 | kagazli1 | hand | qoł | q o <s> ł </s> |
+| kagazli1-he-1 | kagazli1 | he | wɔł | w ɔ <s> ł </s> |
+| kagazli1-left-1 | kagazli1 | left | sɔł | s ɔ <s> ł </s> |
+| kagazli1-sea-1 | kagazli1 | sea | kʉł | k ʉ <s> ł </s> |
+| kagazli1-straight-1 | kagazli1 | straight | tɨzɨł | t ɨ z ɨ <s> ł </s> |
+| kagazli1-tongue-1 | kagazli1 | tongue | tɪł | t ɪ <s> ł </s> |
+| kagazli1-wife-1 | kagazli1 | wife | ajɪł | a j ɪ <s> ł </s> |
+| kagazli1-woman-1 | kagazli1 | woman | ajɪł | a j ɪ <s> ł </s> |
+| kagazli1-year-1 | kagazli1 | year | ʒɨł | ʒ ɨ <s> ł </s> |
+| kagazli2-dry-1 | kagazli2 | dry | qurhaq | q u <s> rh </s> a q |
+| kagazli2-flower-1 | kagazli2 | flower | gʊł | g ʊ <s> ł </s> |
+| kagazli2-good-1 | kagazli2 | good | Zaxsə | <s> Z </s> a x s ə |
+| kagazli2-green-1 | kagazli2 | green | ʒasɨł | ʒ a s ɨ <s> ł </s> |
+| kagazli2-hand-1 | kagazli2 | hand | qoł | q o <s> ł </s> |
+| kagazli2-left-1 | kagazli2 | left | sɔł | s ɔ <s> ł </s> |
+| kagazli2-red-1 | kagazli2 | red | qɨzɨł | q ɨ z ɨ <s> ł </s> |
+| kagazli2-tongue-1 | kagazli2 | tongue | tɪł | t ɪ <s> ł </s> |
+| kagazli2-warm-1 | kagazli2 | warm | ʒɪłłɜ | ʒ ɪ <s> ł </s> <s> ł </s> ɜ |
+| kagazli2-wife-1 | kagazli2 | wife | ajɪł | a j ɪ <s> ł </s> |
+| kagazli2-wind-1 | kagazli2 | wind | ʃamał | ʃ a m a <s> ł </s> |
+| kagazli2-woman-1 | kagazli2 | woman | ajɪł | a j ɪ <s> ł </s> |
+| kagazli2-year-1 | kagazli2 | year | ʒɨł | ʒ ɨ <s> ł </s> |
+| kagazli3-dirty-1 | kagazli3 | dirty | łas | <s> ł </s> a s |
+| kagazli3-flower-1 | kagazli3 | flower | gʊł | g ʊ <s> ł </s> |
+| kagazli3-four-1 | kagazli3 | four | twørt | <s> tw </s> ø r t |
+| kagazli3-good-1 | kagazli3 | good | Zaxsə | <s> Z </s> a x s ə |
+| kagazli3-green-1 | kagazli3 | green | ʒasəł | ʒ a s ə <s> ł </s> |
+| kagazli3-hand-1 | kagazli3 | hand | χoł | χ o <s> ł </s> |
+| kagazli3-red-1 | kagazli3 | red | qɨzɨł | q ɨ z ɨ <s> ł </s> |
+| kagazli3-road-1 | kagazli3 | road | ʒɔł | ʒ ɔ <s> ł </s> |
+| kagazli3-tongue-1 | kagazli3 | tongue | tił | t i <s> ł </s> |
+| kagazli3-wife-1 | kagazli3 | wife | ajɪł | a j ɪ <s> ł </s> |
+| kagazli3-wind-1 | kagazli3 | wind | ʃamał | ʃ a m a <s> ł </s> |
+| kagazli3-woman-1 | kagazli3 | woman | ajɪł | a j ɪ <s> ł </s> |
+| kagazli3-year-1 | kagazli3 | year | ʒɨł | ʒ ɨ <s> ł </s> |
+| kagazli4-animal-1 | kagazli4 | animal | ʒanwar | ʒ a <s> nw </s> a r |
+| kagazli4-ashes-1 | kagazli4 | ashes | kʉł | k ʉ <s> ł </s> |
+| kagazli4-flower-1 | kagazli4 | flower | gʊł | g ʊ <s> ł </s> |
+| kagazli4-good-1 | kagazli4 | good | Zaxsə | <s> Z </s> a x s ə |
+| kagazli4-green-1 | kagazli4 | green | ʒasəł | ʒ a s ə <s> ł </s> |
+| kagazli4-lake-1 | kagazli4 | lake | kwøł | kw ø <s> ł </s> |
+| kagazli4-left-1 | kagazli4 | left | sʊł | s ʊ <s> ł </s> |
+| kagazli4-red-1 | kagazli4 | red | qɨzɨł | q ɨ z ɨ <s> ł </s> |
+| kagazli4-road-1 | kagazli4 | road | ʒoł | ʒ o <s> ł </s> |
+| kagazli4-wind-1 | kagazli4 | wind | ʃamɒł | ʃ a m ɒ <s> ł </s> |
+| kagazli4-year-1 | kagazli4 | year | ʒɨł | ʒ ɨ <s> ł </s> |
+| kagazli5-animal-1 | kagazli5 | animal | ʒanwar | ʒ a <s> nw </s> a r |
+| kagazli5-ashes-1 | kagazli5 | ashes | kʉł | k ʉ <s> ł </s> |
+| kagazli5-flower-1 | kagazli5 | flower | gʉł | g ʉ <s> ł </s> |
+| kagazli5-good-1 | kagazli5 | good | Zaxsə | <s> Z </s> a x s ə |
+| kagazli5-green-1 | kagazli5 | green | ʒasɜł | ʒ a s ɜ <s> ł </s> |
+| kagazli5-hand-1 | kagazli5 | hand | qɔł | q ɔ <s> ł </s> |
+| kagazli5-how-1 | kagazli5 | how | qałaj | q a <s> ł </s> a j |
+| kagazli5-lake-1 | kagazli5 | lake | kwʊł | kw ʊ <s> ł </s> |
+| kagazli5-left-1 | kagazli5 | left | sɔł | s ɔ <s> ł </s> |
+| kagazli5-red-1 | kagazli5 | red | qɨzɨł | q ɨ z ɨ <s> ł </s> |
+| kkhalqabad1-animal-1 | kkhalqabad1 | animal | hajwɒn | h a <s> jw </s> ɒ n |
+| kkhalqabad1-good-1 | kkhalqabad1 | good | Zaxs1 | <s> Z </s> a x s 1 |
+| kkhalqabad1-toeat-1 | kkhalqabad1 | toeat | ʒɪʊː | ʒ ɪʊ <s> � </s> |
+| kkhalqabad2-animal-1 | kkhalqabad2 | animal | hajwɒn | h a <s> jw </s> ɒ n |
+| kkhalqabad2-good-1 | kkhalqabad2 | good | Zaxs1 | <s> Z </s> a x s 1 |
+| kkhalqabad2-toeat-1 | kkhalqabad2 | toeat | ʒɪʊː | ʒ ɪʊ <s> � </s> |
+| kkhalqabad3-animal-1 | kkhalqabad3 | animal | hajwɒn | h a <s> jw </s> ɒ n |
+| kkhalqabad3-good-1 | kkhalqabad3 | good | Zaxs1 | <s> Z </s> a x s 1 |
+| kkhalqabad3-toeat-1 | kkhalqabad3 | toeat | ʒɪʊː | ʒ ɪʊ <s> � </s> |
+| kkhalqabad3-when-1 | kkhalqabad3 | when | qajwaxta | q a <s> jw </s> a x t a |
+| kkkokdarya1-animal-1 | kkkokdarya1 | animal | hajwɔn | h a <s> jw </s> ɔ n |
+| kkkokdarya1-flower-1 | kkkokdarya1 | flower | gył | g y <s> ł </s> |
+| kkkokdarya2-animal-1 | kkkokdarya2 | animal | hajwɒn | h a <s> jw </s> ɒ n |
+| kkkokdarya2-flower-1 | kkkokdarya2 | flower | gʊł | g ʊ <s> ł </s> |
+| kkkokdarya2-good-1 | kkkokdarya2 | good | Zaxs1 | <s> Z </s> a x s 1 |
+| kkkokdarya2-old-1 | kkkokdarya2 | old | gwʊnʲɪ | <s> gw </s> ʊ nʲ ɪ |
+| kkkokdarya3-animal-1 | kkkokdarya3 | animal | hajwɒn | h a <s> jw </s> ɒ n |
+| kkkokdarya3-good-1 | kkkokdarya3 | good | Zaxs1 | <s> Z </s> a x s 1 |
+| kkkokdarya4-animal-1 | kkkokdarya4 | animal | hajwɒn | h a <s> jw </s> ɒ n |
+| kkkokdarya4-good-1 | kkkokdarya4 | good | Zaxs1 | <s> Z </s> a x s 1 |
+| kkshege1-animal-1 | kkshege1 | animal | hajwan | h a <s> jw </s> a n |
+| kkshege1-four-1 | kkshege1 | four | twørt | <s> tw </s> ø r t |
+| kkshege1-good-1 | kkshege1 | good | Zaxs3 | <s> Z </s> a x s 3 |
+| kkshege2-animal-1 | kkshege2 | animal | hajwɔn | h a <s> jw </s> ɔ n |
+| kkshege2-good-1 | kkshege2 | good | Zaxs1 | <s> Z </s> a x s 1 |
+| kkshege2-one-1 | kkshege2 | one | bər̯ | b ə r <s> � </s> |
+| kkshege2-toeat-1 | kkshege2 | toeat | ʒɪʊː | ʒ ɪʊ <s> � </s> |
+| kkshege3-animal-1 | kkshege3 | animal | hajwan | h a <s> jw </s> a n |
+| kkshege3-bad-1 | kkshege3 | bad | ʒ˳aman | ʒ <s> � </s> a m a n |
+| kkshege3-fire-1 | kkshege3 | fire | ʒ˳aːlən | ʒ <s> � </s> aː l ə n |
+| kkshege3-good-1 | kkshege3 | good | Zaxs1 | <s> Z </s> a x s 1 |
+| kkshege3-near-1 | kkshege3 | near | ʒ˳aχən | ʒ <s> � </s> a χ ə n |
+| kkshege3-not-1 | kkshege3 | not | ʒ˳ɔq | ʒ <s> � </s> ɔ q |
+| kkshege3-rain-1 | kkshege3 | rain | ʒ˳awɔn | ʒ <s> � </s> a w ɔ n |
+| kkshege3-star-1 | kkshege3 | star | ʒ˳ɨldɨz̥ | ʒ <s> � </s> ɨ l d ɨ z̥ |
+| kkshege3-toeat-1 | kkshege3 | toeat | ʒɪʊː | ʒ ɪʊ <s> � </s> |
+| kkshege4-animal-1 | kkshege4 | animal | hajwan | h a <s> jw </s> a n |
+| kkshege4-good-1 | kkshege4 | good | Zaxs1 | <s> Z </s> a x s 1 |
+| kkshege4-toeat-1 | kkshege4 | toeat | ʒɪʊː | ʒ ɪʊ <s> � </s> |
 
 (100 rows)
 
