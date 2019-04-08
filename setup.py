@@ -22,7 +22,7 @@ setup(
         ]
     },
     install_requires=[
-        'pylexibank>=0.11',
+        'pylexibank>=1.1.1',
         'python-docx',
     ]
 )
