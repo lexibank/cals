@@ -19,6 +19,8 @@ from pylexibank.dataset import Metadata
 from pylexibank.dataset import Dataset as BaseDataset
 from lingpy.sequence.sound_classes import clean_string
 
+SOURCE = 'Mennecier2016'
+
 
 class Dataset(BaseDataset):
     dir = Path(__file__).parent
@@ -63,10 +65,12 @@ class Dataset(BaseDataset):
             read(fname, data)
 
         with self.cldf as ds:
+            ds.add_sources()
             ccode = ds.add_concepts(id_factory=lambda c: slug(c.label))
             for doculect, wl in sorted(data.items()):
-                ds.add_language(
-                    ID=slug(doculect), Name=doculect, Glottocode=gcode[doculect.split('-')[0]])
+                sd = slug(doculect)
+                
+                ds.add_language(ID=sd, Name=doculect, Glottocode=gcode[doculect.split('-')[0]])
                 for concept, (form, loan, cogset) in sorted(wl.items()):
                     sc = slug(concept)
                     if sc in ccode:
@@ -75,14 +79,12 @@ class Dataset(BaseDataset):
                         sc = sc[3:]
                     else:
                         sc = None
-                    for row in ds.add_lexemes(
-                            Language_ID=slug(doculect), Parameter_ID=sc, Value=form):
+                    
+                    for row in ds.add_lexemes(Language_ID=sd, Parameter_ID=sc, Value=form, Source=SOURCE):
                         if cogset:
-                            ds.add_cognate(
-                                lexeme=row,
-                                Cognateset_ID='%s-%s' % (slug(concept), slug(cogset)))
+                            ds.add_cognate(lexeme=row, Cognateset_ID='%s-%s' % (sc, slug(cogset)))
                             break
-            ds.align_cognates()
+            #ds.align_cognates()
 
 
 COLOR_PATTERN = re.compile('fill="(?P<color>[^"]+)"')
