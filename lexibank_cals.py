@@ -1,81 +1,77 @@
-# coding=utf-8
 """
 Note: We run libreoffice to convert from doc to docx after download.
 """
-from __future__ import unicode_literals, print_function
-from subprocess import check_call
+
 import re
-import unicodedata
 from collections import defaultdict
+from pathlib import Path
+from subprocess import check_call
 
+from clldutils.misc import slug
+from clldutils.path import Path
+from csvw.dsv import UnicodeWriter, reader
 from docx import Document
-from clldutils.dsv import UnicodeWriter, reader
-from clldutils.misc import slug, lazyproperty
-from clldutils.path import Path
-from segments import Tokenizer, Profile
-
-from clldutils.path import Path
-from pylexibank.dataset import Metadata
 from pylexibank.dataset import Dataset as BaseDataset
-from lingpy.sequence.sound_classes import clean_string
-from tqdm import tqdm
+from pylexibank.forms import FormSpec
 
-SOURCE = 'Mennecier2016'
+SOURCE = "Mennecier2016"
 
 
 class Dataset(BaseDataset):
     dir = Path(__file__).parent
-    id = 'cals'
+    id = "cals"
 
-    def cmd_download(self, **kw):
-        def rp(*names):
-            return self.raw.posix(*names)
+    # split(" ~ ")
+    form_spec = FormSpec(brackets={}, separators="~", missing_data=(), strip_inside_brackets=False)
 
-        fname = 'Table_S2_Supplementary_Mennecier_et_al..doc'
-        self.raw.download_and_unpack(
-            'https://ndownloader.figshare.com/articles/3443090/versions/1',
-            fname,
-            log=self.log)
+    def cmd_download(self, args):
+        fname = self.raw_dir / "Table_S2_Supplementary_Mennecier_et_al..doc"
+
+        self.raw_dir.download_and_unpack(
+            "https://ndownloader.figshare.com/articles/3443090/versions/1", fname, log=args.log
+        )
+
         check_call(
-            'libreoffice --headless --convert-to docx %s --outdir %s' % (rp(fname), rp()),
-            shell=True)
+            "libreoffice --headless --convert-to docx %s --outdir %s" % (fname, self.raw_dir),
+            shell=True,
+        )
 
-        doc = Document(rp(Path(fname).stem + '.docx'))
+        doc = Document(self.raw_dir / "Table_S2_Supplementary_Mennecier_et_al..docx")
         for i, table in enumerate(doc.tables):
-            with UnicodeWriter(rp('%s.csv' % (i + 1,))) as writer:
+            with UnicodeWriter(self.raw_dir.joinpath("%s.csv" % (i + 1,)).as_posix()) as writer:
                 for row in table.rows:
                     writer.writerow(map(text_and_color, row.cells))
 
-    def split_forms(self, row, value):
-        return value.split(' ~ ')
-
-    def cmd_install(self, **kw):
-        gcode = {x['ID']: x['Glottocode'] for x in self.languages}
+    def cmd_makecldf(self, args):
+        gcode = {x["ID"]: x["Glottocode"] for x in self.languages}
         data = defaultdict(dict)
-        for fname in self.raw.glob('*.csv'):
+        args.writer.add_sources()
+
+        for fname in self.raw_dir.glob("*.csv"):
             read(fname, data)
 
-        with self.cldf as ds:
-            ds.add_sources()
-            ccode = ds.add_concepts(id_factory=lambda c: slug(c.label))
-            for doculect, wl in sorted(data.items()):
-                sd = slug(doculect)             
-                ds.add_language(ID=sd, Name=doculect, Glottocode=gcode[doculect.split('-')[0]])
+        ccode = args.writer.add_concepts(id_factory=lambda c: slug(c.label))
+        for doculect, wl in sorted(data.items()):
+            sd = slug(doculect)
+            args.writer.add_language(ID=sd, Name=doculect, Glottocode=gcode[doculect.split("-")[0]])
 
-                for concept, (form, loan, cogset) in sorted(wl.items()):
-                    sc = slug(concept)
-                    if sc in ccode:
-                        pass
-                    elif sc.startswith('to ') and sc[3:] in ccode:
-                        sc = sc[3:]
-                    else:
-                        sc = None
+            for concept, (form, loan, cogset) in sorted(wl.items()):
+                sc = slug(concept)
+                if sc in ccode:
+                    pass
+                elif sc.startswith("to ") and sc[3:] in ccode:
+                    sc = sc[3:]
+                else:
+                    sc = None
 
-                    for row in ds.add_lexemes(Language_ID=sd, Parameter_ID=sc, Value=form, Source=SOURCE):
-                        if cogset:
-                            ds.add_cognate(lexeme=row, Cognateset_ID='%s-%s' % (sc, slug(cogset)))
-                            break
-            #ds.align_cognates()
+                for row in args.writer.add_lexemes(
+                    Language_ID=sd, Parameter_ID=sc, Value=form, Source=SOURCE
+                ):
+                    if cogset:
+                        args.writer.add_cognate(
+                            lexeme=row, Cognateset_ID="%s-%s" % (sc, slug(cogset))
+                        )
+                        break
 
 
 COLOR_PATTERN = re.compile('fill="(?P<color>[^"]+)"')
@@ -83,22 +79,22 @@ COLOR_PATTERN = re.compile('fill="(?P<color>[^"]+)"')
 
 def text_and_color(cell):
     color = None
-    for line in cell._tc.tcPr.xml.split('\n'):
-        if 'w:shd' in line:
+    for line in cell._tc.tcPr.xml.split("\n"):
+        if "w:shd" in line:
             m = COLOR_PATTERN.search(line)
             if m:
-                color = m.group('color')
+                color = m.group("color")
                 break
-    if color == 'auto':
+    if color == "auto":
         color = None
     if color:
-        color = '#' + color + ' '
-    return '%s%s' % (color if color else '', cell.paragraphs[0].text)
+        color = "#" + color + " "
+    return "%s%s" % (color if color else "", cell.paragraphs[0].text)
 
 
 def get_loan_and_form(c):
-    if c.startswith('#'):
-        return c.split(' ', 1)
+    if c.startswith("#"):
+        return c.split(" ", 1)
     return None, c
 
 

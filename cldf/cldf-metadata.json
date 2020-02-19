@@ -1,33 +1,59 @@
 {
     "@context": "http://www.w3.org/ns/csvw",
     "aboutUrl": null,
-    "dc:bibliographicCitation": "Mennecier, Philippe; Nerbonne, John; Heyer, Evelyne; Manni, Franz (2016): A Central Asian Language Survey. Language Dynamics and Change. 6.1. 57-98.",
+    "dc:bibliographicCitation": "Mennecier, P., Nerbonne, J., Heyer, E., & Manni, F. (2016). A Central Asian Language Survey, Language Dynamics and Change, 6(1), 57-98. doi: https://doi.org/10.1163/22105832-00601015",
     "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#Wordlist",
-    "dc:description": null,
     "dc:format": [
         "http://concepticon.clld.org/contributions/Mennecier-2016-183"
     ],
-    "dc:identifier": "https://figshare.com/articles/A_Central_Asian_Language_Survey/3443090/1",
+    "dc:identifier": "https://doi.org/10.1163/22105832-00601015",
     "dc:isVersionOf": null,
     "dc:license": "https://creativecommons.org/licenses/by/4.0/",
     "dc:related": null,
     "dc:source": "sources.bib",
     "dc:title": "Central Asian Language Survey",
-    "dcat:accessURL": "https://github.com/lexibank/cals",
+    "dcat:accessURL": "git@github.com:lexibank/cals",
+    "prov:wasDerivedFrom": [
+        {
+            "rdf:type": "prov:Entity",
+            "dc:title": "Repository",
+            "rdf:about": "git@github.com:lexibank/cals",
+            "dc:created": "0e3d372"
+        },
+        {
+            "rdf:type": "prov:Entity",
+            "dc:title": "Glottolog",
+            "rdf:about": "https://github.com/glottolog/glottolog",
+            "dc:created": "v4.1-30-ga1ef02e22a"
+        },
+        {
+            "rdf:type": "prov:Entity",
+            "dc:title": "Concepticon",
+            "rdf:about": "https://github.com/concepticon/concepticon-data",
+            "dc:created": "v2.2.1a-175-gc9156f9"
+        },
+        {
+            "rdf:type": "prov:Entity",
+            "dc:title": "CLTS",
+            "rdf:about": "https://github.com/cldf-clts/clts",
+            "dc:created": "v1.4"
+        }
+    ],
+    "prov:wasGeneratedBy": [
+        {
+            "dc:title": "python",
+            "dc:description": "3.7.5"
+        },
+        {
+            "dc:title": "python-packages",
+            "dc:relation": "requirements.txt"
+        }
+    ],
     "rdf:ID": "cals",
     "rdf:type": "http://www.w3.org/ns/dcat#Distribution",
     "dialect": {
         "commentPrefix": null
     },
-    "notes": [
-        {
-            "dc:title": "environment",
-            "properties": {
-                "glottolog_version": "v4.0-12-ge90a2e37f4",
-                "concepticon_version": "v2.0-30-gcea4c63"
-            }
-        }
-    ],
     "tables": [
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#FormTable",
