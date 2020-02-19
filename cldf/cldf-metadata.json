@@ -1,11 +1,18 @@
 {
     "@context": "http://www.w3.org/ns/csvw",
-    "dc:bibliographicCitation": "Mennecier, Philippe; Nerbonne, John; Heyer, Evelyne; Manni, Franz (2016): A Central Asian Language Survey. figshare. https://dx.doi.org/10.6084/m9.figshare.3443090.v1",
+    "aboutUrl": null,
+    "dc:bibliographicCitation": "Mennecier, Philippe; Nerbonne, John; Heyer, Evelyne; Manni, Franz (2016): A Central Asian Language Survey. Language Dynamics and Change. 6.1. 57-98.",
     "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#Wordlist",
-    "dc:format": "http://concepticon.clld.org/contributions/Mennecier-2016-183",
+    "dc:description": null,
+    "dc:format": [
+        "http://concepticon.clld.org/contributions/Mennecier-2016-183"
+    ],
     "dc:identifier": "https://figshare.com/articles/A_Central_Asian_Language_Survey/3443090/1",
+    "dc:isVersionOf": null,
     "dc:license": "https://creativecommons.org/licenses/by/4.0/",
-    "dc:title": "A Central Asian Language Survey",
+    "dc:related": null,
+    "dc:source": "sources.bib",
+    "dc:title": "Central Asian Language Survey",
     "dcat:accessURL": "https://github.com/lexibank/cals",
     "rdf:ID": "cals",
     "rdf:type": "http://www.w3.org/ns/dcat#Distribution",
@@ -16,8 +23,8 @@
         {
             "dc:title": "environment",
             "properties": {
-                "glottolog_version": "v3.3.2",
-                "concepticon_version": "pyconcepticon-1.4.0-10-g1d57531"
+                "glottolog_version": "v4.0-12-ge90a2e37f4",
+                "concepticon_version": "v2.0-30-gcea4c63"
             }
         }
     ],
@@ -51,7 +58,7 @@
                     },
                     {
                         "datatype": "string",
-                        "propertyUrl": "http://linguistics-ontology.org/gold/2010/FormUnit",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#value",
                         "required": true,
                         "name": "Value"
                     },
@@ -151,6 +158,26 @@
                         "datatype": "string",
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#macroarea",
                         "name": "Macroarea"
+                    },
+                    {
+                        "datatype": {
+                            "base": "decimal",
+                            "minimum": -90,
+                            "maximum": 90
+                        },
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#latitude",
+                        "required": false,
+                        "name": "Latitude"
+                    },
+                    {
+                        "datatype": {
+                            "base": "decimal",
+                            "minimum": -180,
+                            "maximum": 180
+                        },
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#longitude",
+                        "required": false,
+                        "name": "Longitude"
                     },
                     {
                         "datatype": "string",

@@ -18,6 +18,7 @@ from clldutils.path import Path
 from pylexibank.dataset import Metadata
 from pylexibank.dataset import Dataset as BaseDataset
 from lingpy.sequence.sound_classes import clean_string
+from tqdm import tqdm
 
 SOURCE = 'Mennecier2016'
 
@@ -48,16 +49,6 @@ class Dataset(BaseDataset):
     def split_forms(self, row, value):
         return value.split(' ~ ')
 
-    @lazyproperty
-    def tokenizer(self):
-        profile = self.dir / 'etc' / 'orthography.tsv'
-        tokenizer = Tokenizer(profile=Profile.from_file(str(profile), form='NFC'))
-        def _tokenizer(item, string, **kw):
-            kw.setdefault("column", "Grapheme")
-            kw.setdefault("separator", " _ ")
-            return tokenizer(unicodedata.normalize('NFC', string), **kw).split()
-        return _tokenizer
-
     def cmd_install(self, **kw):
         gcode = {x['ID']: x['Glottocode'] for x in self.languages}
         data = defaultdict(dict)
@@ -68,9 +59,9 @@ class Dataset(BaseDataset):
             ds.add_sources()
             ccode = ds.add_concepts(id_factory=lambda c: slug(c.label))
             for doculect, wl in sorted(data.items()):
-                sd = slug(doculect)
-                
+                sd = slug(doculect)             
                 ds.add_language(ID=sd, Name=doculect, Glottocode=gcode[doculect.split('-')[0]])
+
                 for concept, (form, loan, cogset) in sorted(wl.items()):
                     sc = slug(concept)
                     if sc in ccode:
@@ -79,7 +70,7 @@ class Dataset(BaseDataset):
                         sc = sc[3:]
                     else:
                         sc = None
-                    
+
                     for row in ds.add_lexemes(Language_ID=sd, Parameter_ID=sc, Value=form, Source=SOURCE):
                         if cogset:
                             ds.add_cognate(lexeme=row, Cognateset_ID='%s-%s' % (sc, slug(cogset)))
