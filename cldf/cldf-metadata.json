@@ -12,13 +12,13 @@
     "dc:related": null,
     "dc:source": "sources.bib",
     "dc:title": "Central Asian Language Survey",
-    "dcat:accessURL": "git@github.com:lexibank/cals",
+    "dcat:accessURL": "https://github.com/lexibank/cals",
     "prov:wasDerivedFrom": [
         {
             "rdf:type": "prov:Entity",
             "dc:title": "Repository",
-            "rdf:about": "git@github.com:lexibank/cals",
-            "dc:created": "0e3d372"
+            "rdf:about": "https://github.com/lexibank/cals",
+            "dc:created": "351262f"
         },
         {
             "rdf:type": "prov:Entity",
