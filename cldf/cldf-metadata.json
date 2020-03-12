@@ -18,19 +18,19 @@
             "rdf:type": "prov:Entity",
             "dc:title": "Repository",
             "rdf:about": "https://github.com/lexibank/cals",
-            "dc:created": "351262f"
+            "dc:created": "8e25c5b"
         },
         {
             "rdf:type": "prov:Entity",
             "dc:title": "Glottolog",
             "rdf:about": "https://github.com/glottolog/glottolog",
-            "dc:created": "v4.1-30-ga1ef02e22a"
+            "dc:created": "v4.1-37-gb7fe367"
         },
         {
             "rdf:type": "prov:Entity",
             "dc:title": "Concepticon",
             "rdf:about": "https://github.com/concepticon/concepticon-data",
-            "dc:created": "v2.2.1a-175-gc9156f9"
+            "dc:created": "v2.3.0-3-g11e0762"
         },
         {
             "rdf:type": "prov:Entity",
@@ -42,7 +42,7 @@
     "prov:wasGeneratedBy": [
         {
             "dc:title": "python",
-            "dc:description": "3.7.5"
+            "dc:description": "3.5.2"
         },
         {
             "dc:title": "python-packages",
