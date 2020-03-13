@@ -18,7 +18,7 @@
             "rdf:type": "prov:Entity",
             "dc:title": "Repository",
             "rdf:about": "https://github.com/lexibank/cals",
-            "dc:created": "9041faa"
+            "dc:created": "f8ac50a"
         },
         {
             "rdf:type": "prov:Entity",
@@ -57,7 +57,7 @@
     "tables": [
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#FormTable",
-            "dc:extent": 15742,
+            "dc:extent": 15826,
             "tableSchema": {
                 "columns": [
                     {
@@ -218,7 +218,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ParameterTable",
-            "dc:extent": 183,
+            "dc:extent": 184,
             "tableSchema": {
                 "columns": [
                     {
@@ -250,7 +250,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#CognateTable",
-            "dc:extent": 15742,
+            "dc:extent": 15826,
             "tableSchema": {
                 "columns": [
                     {

@@ -52,19 +52,39 @@ class Dataset(BaseDataset):
                 self.raw_dir.joinpath("%s.csv" % (i + 1,)).as_posix()
             ) as writer:
                 for row in table.rows:
-                    writer.writerow(map(text_and_color, row.cells))
+                    # This code fixes a wrong gloss in the raw source,
+                    # where the `itʲerʊ` set is glossed as "to pull"
+                    # instead of the correct "to push". See discussion
+                    # at https://github.com/lexibank/cals/pull/7
+                    row_data = map(text_and_color, row.cells)
+                    if i == 11:
+                        row_data = [
+                            cell if cell != "to pull" else "to push"
+                            for cell in row_data
+                        ]
+                    writer.writerow(row_data)
 
     def cmd_makecldf(self, args):
         gcode = {x["ID"]: x["Glottocode"] for x in self.languages}
         data = defaultdict(dict)
         args.writer.add_sources()
 
-        for fname in self.raw_dir.glob("*.csv"):
+        for fname in sorted(self.raw_dir.glob("*.csv")):
             read(fname, data)
 
         ccode = args.writer.add_concepts(id_factory=lambda c: slug(c.label))
+
+        # Add manual correction
+        ccode.append("topush")
+        args.writer.add_concept(
+            ID="topush",
+            Name="to push",
+            Concepticon_ID="1452",
+            Concepticon_Gloss="PUSH",
+        )
+
         for doculect, wl in sorted(data.items()):
-            sd = slug(doculect)
+            sd = slug(doculect).capitalize()
             args.writer.add_language(
                 ID=sd, Name=doculect, Glottocode=gcode[doculect.split("-")[0]]
             )
