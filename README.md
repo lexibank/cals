@@ -22,13 +22,20 @@ Conceptlists in Concepticon:
 ![CLTS SoundClass: 100%](https://img.shields.io/badge/CLTS%20SoundClass-100%25-brightgreen.svg "CLTS SoundClass: 100%")
 
 - **Varieties:** 88
-- **Concepts:** 183
-- **Lexemes:** 15,742
+- **Concepts:** 184
+- **Lexemes:** 15,826
 - **Sources:** 1
 - **Synonymy:** 1.00
-- **Cognacy:** 15,742 cognates in 893 cognate sets (178 singletons)
+- **Cognacy:** 15,826 cognates in 899 cognate sets (181 singletons)
 - **Cognate Diversity:** 0.05
 - **Invalid lexemes:** 0
-- **Tokens:** 69,601
-- **Segments:** 133 (0 BIPA errors, 0 CTLS sound class errors, 133 CLTS modified)
-- **Inventory size (avg):** 52.36
+- **Tokens:** 70,084
+- **Segments:** 132 (0 BIPA errors, 0 CTLS sound class errors, 132 CLTS modified)
+- **Inventory size (avg):** 52.35
+
+# Contributors
+
+Name | GitHub user | Role
+ --- | --- | --- 
+Robert Forkel | @xrotwang | maintainer
+

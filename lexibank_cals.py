@@ -22,38 +22,72 @@ class Dataset(BaseDataset):
     id = "cals"
 
     # split(" ~ ")
-    form_spec = FormSpec(brackets={}, separators="~", missing_data=(), strip_inside_brackets=False)
+    form_spec = FormSpec(
+        brackets={},
+        separators="~",
+        missing_data=(),
+        strip_inside_brackets=False,
+    )
 
     def cmd_download(self, args):
         fname = self.raw_dir / "Table_S2_Supplementary_Mennecier_et_al..doc"
 
         self.raw_dir.download_and_unpack(
-            "https://ndownloader.figshare.com/articles/3443090/versions/1", fname, log=args.log
+            "https://ndownloader.figshare.com/articles/3443090/versions/1",
+            fname,
+            log=args.log,
         )
 
         check_call(
-            "libreoffice --headless --convert-to docx %s --outdir %s" % (fname, self.raw_dir),
+            "libreoffice --headless --convert-to docx %s --outdir %s"
+            % (fname, self.raw_dir),
             shell=True,
         )
 
-        doc = Document(self.raw_dir / "Table_S2_Supplementary_Mennecier_et_al..docx")
+        doc = Document(
+            self.raw_dir / "Table_S2_Supplementary_Mennecier_et_al..docx"
+        )
         for i, table in enumerate(doc.tables):
-            with UnicodeWriter(self.raw_dir.joinpath("%s.csv" % (i + 1,)).as_posix()) as writer:
+            with UnicodeWriter(
+                self.raw_dir.joinpath("%s.csv" % (i + 1,)).as_posix()
+            ) as writer:
                 for row in table.rows:
-                    writer.writerow(map(text_and_color, row.cells))
+                    # This code fixes a wrong gloss in the raw source,
+                    # where the `itʲerʊ` set is glossed as "to pull"
+                    # instead of the correct "to push". See discussion
+                    # at https://github.com/lexibank/cals/pull/7
+                    row_data = map(text_and_color, row.cells)
+                    if i == 11:
+                        row_data = [
+                            cell if cell != "to pull" else "to push"
+                            for cell in row_data
+                        ]
+                    writer.writerow(row_data)
 
     def cmd_makecldf(self, args):
         gcode = {x["ID"]: x["Glottocode"] for x in self.languages}
         data = defaultdict(dict)
         args.writer.add_sources()
 
-        for fname in self.raw_dir.glob("*.csv"):
+        for fname in sorted(self.raw_dir.glob("*.csv")):
             read(fname, data)
 
         ccode = args.writer.add_concepts(id_factory=lambda c: slug(c.label))
+
+        # Add manual correction
+        ccode.append("topush")
+        args.writer.add_concept(
+            ID="topush",
+            Name="to push",
+            Concepticon_ID="1452",
+            Concepticon_Gloss="PUSH",
+        )
+
         for doculect, wl in sorted(data.items()):
-            sd = slug(doculect)
-            args.writer.add_language(ID=sd, Name=doculect, Glottocode=gcode[doculect.split("-")[0]])
+            sd = slug(doculect).capitalize()
+            args.writer.add_language(
+                ID=sd, Name=doculect, Glottocode=gcode[doculect.split("-")[0]]
+            )
 
             for concept, (form, loan, cogset) in sorted(wl.items()):
                 sc = slug(concept)
@@ -69,7 +103,8 @@ class Dataset(BaseDataset):
                 ):
                     if cogset:
                         args.writer.add_cognate(
-                            lexeme=row, Cognateset_ID="%s-%s" % (sc, slug(cogset))
+                            lexeme=row,
+                            Cognateset_ID="%s-%s" % (sc, slug(cogset)),
                         )
                         break
 
