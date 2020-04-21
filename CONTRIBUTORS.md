@@ -1,5 +1,9 @@
 # Contributors
 
-Name | GitHub user | Role
- --- | --- | --- 
-Robert Forkel | @xrotwang | maintainer
+Name | GitHub user | Description | Role
+ --- | --- | --- | ---
+Mennecier, P. | | data collector | DataCollector, Author
+Nerbonne, J. | | data collector | DataCollector, Editor
+Heyer, E. | | data collector | DataCollector
+Manni, F. | | data collector | DataCollector
+Robert Forkel | @xrotwang | maintainer | Author
