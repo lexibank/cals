@@ -1,0 +1,54 @@
+{
+    "title": "CLDF dataset derived from Mennecier et al.'s \"Central Asian Language Survey\" from 2016",
+    "access_right": "open",
+    "keywords": [
+        "cldf:Wordlist",
+        "linguistics"
+    ],
+    "creators": [
+        {
+            "name": "Mennecier, P."
+        },
+        {
+            "name": "Robert Forkel"
+        }
+    ],
+    "contributors": [
+        {
+            "name": "Mennecier, P.",
+            "type": "DataCollector"
+        },
+        {
+            "name": "Nerbonne, J.",
+            "type": "DataCollector"
+        },
+        {
+            "name": "Nerbonne, J.",
+            "type": "Editor"
+        },
+        {
+            "name": "Heyer, E.",
+            "type": "DataCollector"
+        },
+        {
+            "name": "Manni, F.",
+            "type": "DataCollector"
+        }
+    ],
+    "communities": [
+        {
+            "identifier": "lexibank"
+        },
+        {
+            "identifier": "lexibank"
+        },
+        {
+            "identifier": "lexibank"
+        }
+    ],
+    "upload_type": "dataset",
+    "description": "<p>Cite the source of the dataset as:</p>\n\n<blockquote>\n<p>Mennecier, P., Nerbonne, J., Heyer, E., &amp; Manni, F. (2016). A Central Asian Language Survey, Language Dynamics and Change, 6(1), 57-98. doi: https://doi.org/10.1163/22105832-00601015</p>\n</blockquote>",
+    "license": {
+        "id": "CC-BY-4.0"
+    }
+}

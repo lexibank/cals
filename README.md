@@ -1,4 +1,4 @@
-# Central Asian Language Survey
+# CLDF dataset derived from Mennecier et al.'s "Central Asian Language Survey" from 2016
 
 Cite the source dataset as
 
@@ -35,7 +35,12 @@ Conceptlists in Concepticon:
 
 # Contributors
 
-Name | GitHub user | Role
- --- | --- | --- 
-Robert Forkel | @xrotwang | maintainer
+Name | GitHub user | Description | Role
+ --- | --- | --- | ---
+Mennecier, P. | | data collector | DataCollector, Author
+Nerbonne, J. | | data collector | DataCollector, Editor
+Heyer, E. | | data collector | DataCollector
+Manni, F. | | data collector | DataCollector
+Robert Forkel | @xrotwang | maintainer | Author
+
 
