@@ -8,9 +8,6 @@
     "creators": [
         {
             "name": "Mennecier, P."
-        },
-        {
-            "name": "Robert Forkel"
         }
     ],
     "contributors": [
@@ -33,15 +30,17 @@
         {
             "name": "Manni, F.",
             "type": "DataCollector"
+        },
+        {
+            "name": "Robert Forkel",
+            "type": "Other"
+        },
+        {
+            "name": "Christoph Rzymski",
+            "type": "Other"
         }
     ],
     "communities": [
-        {
-            "identifier": "lexibank"
-        },
-        {
-            "identifier": "lexibank"
-        },
         {
             "identifier": "lexibank"
         }
