@@ -10,7 +10,13 @@
             "name": "Mennecier, P."
         },
         {
-            "name": "Robert Forkel"
+            "name": "Nerbonne, J."
+        },
+        {
+            "name": "Heyer, E."
+        },
+        {
+            "name": "Manni, F."
         }
     ],
     "contributors": [
@@ -23,25 +29,23 @@
             "type": "DataCollector"
         },
         {
-            "name": "Nerbonne, J.",
-            "type": "Editor"
-        },
-        {
             "name": "Heyer, E.",
             "type": "DataCollector"
         },
         {
             "name": "Manni, F.",
             "type": "DataCollector"
+        },
+        {
+            "name": "Robert Forkel",
+            "type": "Other"
+        },
+        {
+            "name": "Johann-Mattis List",
+            "type": "Other"
         }
     ],
     "communities": [
-        {
-            "identifier": "lexibank"
-        },
-        {
-            "identifier": "lexibank"
-        },
         {
             "identifier": "lexibank"
         }

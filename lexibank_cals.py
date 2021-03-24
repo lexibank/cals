@@ -10,7 +10,6 @@ from subprocess import check_call
 from clldutils.misc import slug
 from clldutils.path import Path
 from csvw.dsv import UnicodeWriter, reader
-from docx import Document
 from pylexibank.dataset import Dataset as BaseDataset
 from pylexibank.forms import FormSpec
 
@@ -30,6 +29,7 @@ class Dataset(BaseDataset):
     )
 
     def cmd_download(self, args):
+        from docx import Document
         fname = self.raw_dir / "Table_S2_Supplementary_Mennecier_et_al..doc"
 
         self.raw_dir.download_and_unpack(
