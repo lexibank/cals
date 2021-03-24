@@ -14,7 +14,7 @@ Conceptlists in Concepticon:
 ## Statistics
 
 
-[![Build Status](https://travis-ci.org/lexibank/cals.svg?branch=master)](https://travis-ci.org/lexibank/cals)
+[![CLDF validation](https://github.com/lexibank/cals/workflows/CLDF-validation/badge.svg)](https://github.com/lexibank/cals/actions?query=workflow%3ACLDF-validation)
 ![Glottolog: 100%](https://img.shields.io/badge/Glottolog-100%25-brightgreen.svg "Glottolog: 100%")
 ![Concepticon: 100%](https://img.shields.io/badge/Concepticon-100%25-brightgreen.svg "Concepticon: 100%")
 ![Source: 100%](https://img.shields.io/badge/Source-100%25-brightgreen.svg "Source: 100%")
@@ -42,6 +42,6 @@ Nerbonne, J. | | data collector | DataCollector, Author
 Heyer, E. | | data collector | DataCollector, Author
 Manni, F. | | data collector | DataCollector, Author
 Robert Forkel | @xrotwang | maintainer | Other
-Johann-Mattis List | | maintainer | Other
+
 
 
