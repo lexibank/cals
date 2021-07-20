@@ -1,8 +1,16 @@
 # CLDF dataset derived from Mennecier et al.'s "Central Asian Language Survey" from 2016
 
-Cite the source dataset as
+[![CLDF validation](https://github.com/lexibank/cals/workflows/CLDF-validation/badge.svg)](https://github.com/lexibank/cals/actions?query=workflow%3ACLDF-validation)
 
-> Mennecier, P., Nerbonne, J., Heyer, E., & Manni, F. (2016). A Central Asian Language Survey, Language Dynamics and Change, 6(1), 57-98. doi: https://doi.org/10.1163/22105832-00601015
+## How to cite
+
+If you use these data please cite
+- the original source
+  > Mennecier, P., Nerbonne, J., Heyer, E., & Manni, F. (2016). A Central Asian Language Survey, Language Dynamics and Change, 6(1), 57-98. doi: https://doi.org/10.1163/22105832-00601015
+- the derived dataset using the DOI of the [particular released version](../../releases/) you were using
+
+## Description
+
 
 This dataset is licensed under a CC-BY-4.0 license
 
@@ -45,3 +53,10 @@ Robert Forkel | @xrotwang | maintainer | Other
 
 
 
+
+
+## CLDF Datasets
+
+The following CLDF datasets are available in [cldf](cldf):
+
+- CLDF [Wordlist](https://github.com/cldf/cldf/tree/master/modules/Wordlist) at [cldf/cldf-metadata.json](cldf/cldf-metadata.json)

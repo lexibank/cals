@@ -15,6 +15,6 @@ setup(
     include_package_data=True,
     zip_safe=False,
     entry_points={"lexibank.dataset": ["cals=lexibank_cals:Dataset"]},
-    install_requires=["pylexibank>=2.1.0", "python-docx"],
+    install_requires=["pylexibank>=3.0", "python-docx"],
     extras_require={"test": ["pytest-cldf"]},
 )
