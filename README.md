@@ -29,8 +29,8 @@ Conceptlists in Concepticon:
 ![BIPA: 100%](https://img.shields.io/badge/BIPA-100%25-brightgreen.svg "BIPA: 100%")
 ![CLTS SoundClass: 100%](https://img.shields.io/badge/CLTS%20SoundClass-100%25-brightgreen.svg "CLTS SoundClass: 100%")
 
-- **Varieties:** 88
-- **Concepts:** 184
+- **Varieties:** 88 (linked to 6 different Glottocodes)
+- **Concepts:** 184 (linked to 184 different Concepticon concept sets)
 - **Lexemes:** 15,826
 - **Sources:** 1
 - **Synonymy:** 1.00
@@ -38,7 +38,7 @@ Conceptlists in Concepticon:
 - **Cognate Diversity:** 0.05
 - **Invalid lexemes:** 0
 - **Tokens:** 70,084
-- **Segments:** 132 (0 BIPA errors, 0 CTLS sound class errors, 132 CLTS modified)
+- **Segments:** 132 (0 BIPA errors, 0 CLTS sound class errors, 132 CLTS modified)
 - **Inventory size (avg):** 52.35
 
 # Contributors
@@ -49,8 +49,7 @@ Mennecier, P. | | data collector | DataCollector, Author
 Nerbonne, J. | | data collector | DataCollector, Author
 Heyer, E. | | data collector | DataCollector, Author
 Manni, F. | | data collector | DataCollector, Author
-Robert Forkel | @xrotwang | maintainer | Other
-
+Robert Forkel | @xrotwang | maintainer | Editor
 
 
 
