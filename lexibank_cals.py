@@ -97,15 +97,14 @@ class Dataset(BaseDataset):
                     sc = sc[3:]
                 else:
                     sc = None
-
+                
+                cogid = "%s-%s" % (sc, slug(cogset)) if cogset else None
+                
                 for row in args.writer.add_lexemes(
-                    Language_ID=sd, Parameter_ID=sc, Value=form, Source=SOURCE
+                    Language_ID=sd, Parameter_ID=sc, Value=form, Source=SOURCE, Cognacy=cogid
                 ):
                     if cogset:
-                        args.writer.add_cognate(
-                            lexeme=row,
-                            Cognateset_ID="%s-%s" % (sc, slug(cogset)),
-                        )
+                        args.writer.add_cognate(lexeme=row, Cognateset_ID=cogid)
                         break
 
 
